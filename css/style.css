@@ -3,6 +3,13 @@
 :root{
     --text_color:#333;
     --accent_color_green:#0A775F;
+    --accent_color_brown:#C99B67;
+    --accent_color_brown_60:rgb(201, 155, 103,0.6);
+    --accent_color_brown:rgb(201, 155, 103,0.8);
+    --accent_color_green_80:rgb(10, 119, 95 , 0.8);
+    --accent_color_green_60:rgb(10, 119, 95,0.6);
+    --light_brown:#f3d7b7;
+    --light_bg:#f8f8f2;
     --outline_color:var(--accent_color_green)
 }
 /* globol */
@@ -33,6 +40,34 @@ img{
     max-width: 100%;
     height: auto;
 }
+.button {
+    padding: 16px 24px;
+    border-radius: 100px;
+    bottom: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    white-space: nowrap;
+    transition: 1s all;
+}
+.button_green {
+    color:#fff;
+    background: var(--accent_color_green);
+}
+.button_green:hover{
+    background: var(--accent_color_green_80);
+}
+.button_green:active{
+    background: var(--accent_color_green_60);
+}
 *:focus{
     outline: 2px dashed var(--outline_color);
     outline-offset: 3px;
@@ -51,12 +86,14 @@ img{
 /* main_content */
 .main_content{
     flex-grow: 1;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 /* site_haeder_hero_wrapper */
 
 .site_haeder_hero_wrapper{
-    background: url(../img/fon.jpg) no-repeat;
+    background: url(../img/fon.jpg) repeat;
     
 
 }
@@ -77,6 +114,7 @@ img{
 .site_header_logo_link {
     text-decoration: none;
     display: flex;
+    flex-shrink: 0;
 }
 .site_header_logo_img {
     width: 235px;
@@ -110,6 +148,7 @@ img{
     font-size: 13px;
     line-height: normal;
     transition: all 1s;
+    white-space: nowrap;
 }
 .sitenav_link:hover{
    color: var(--accent_color_green);
@@ -117,8 +156,112 @@ img{
 .sitenav_link:active{
     opacity: 0.6;
 }
-
-
+/* hero */
+.site_hero {
+}
+.hero_container {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+}
+.hero_info_wrapper {
+    width: 100%;
+    max-width: 730px;
+    padding-top: 116px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    padding-right: 116px;
+}
+.hero_info_heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: normal;
+    color: #000000;
+}
+.hero_text {
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+}
+.hero_text:not(:last-child){
+    margin-bottom: 40px;
+}
+.hero_img {
+    margin: 0;
+    padding: 0;
+    width: 710px;
+    height: 596px;
+}
+/* index_collection */
+.index_collection {
+}
+.index_collection_inner{
+    padding: 50px 143px;
+    background: var(--light_bg);
+    background: url(../img/bg_collection.jpg) center/cover;
+}
+.index_collectiton_haeding {
+    margin: 0;
+    margin-bottom: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: normal;
+}
+.index_collection_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.index_collection_item {
+    display: flex;
+    align-items: center;
+}
+.index_collection_item:nth-child(even){
+    flex-direction: row-reverse;
+}
+.index_collection_img {
+    width: 450px;
+    height: 375px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.index_collectiion_info {
+    flex-wrap: 1;
+    padding-left: 117px;
+    padding-right: 117px;
+    
+}
+.index_collection_title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.index_collection_text {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height:normal;
+    color: var(--text_color);
+}
+.index_collection_text:not(:last-child){
+    margin-bottom: 10px;
+}
 
 
 /* retina */
