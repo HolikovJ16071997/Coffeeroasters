@@ -201,6 +201,7 @@ img{
 }
 /* index_collection */
 .index_collection {
+    margin-bottom: 20px;
 }
 .index_collection_inner{
     padding: 50px 143px;
@@ -263,6 +264,85 @@ img{
     margin-bottom: 10px;
 }
 
+/* index_feacher */
+
+.index_fiatures {
+    
+}
+.index_features_inner {
+   padding: 50px 30px;
+    background: url(../img/index_features_bg.jpg) no-repeat;
+    background-size: 100%;
+
+}
+.index_features_heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    font-variant: small-caps;
+}
+.index_features_lead {
+    width: 100%;
+    max-width: 581px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.index_features_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+.index_features_item {
+    width: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.index_features_img {
+    width: 433px;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 28px;
+}
+.index_feachers_item_heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: var(--text_color);
+}
+.index_feachers_item_text {
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text_color);
+}
 
 /* retina */
 @media
@@ -275,6 +355,9 @@ only screen and (                min-resolution: 2dppx) {
     .site_haeder_hero_wrapper{
         background: url(../img/fon@2x.jpg) no-repeat;
     
+    }
+    .index_features_inner {
+        background: url(../img/index_features_@2x.jpg);
     }
     
 }
